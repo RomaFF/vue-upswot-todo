@@ -55,14 +55,19 @@ export default {
   &__text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 70%;
+    text-align: left;
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 156.69%;
     &-title {
       padding-bottom: 10px;
+      word-wrap: break-word;
+    }
+    &-descr {
+      word-wrap: break-word;
+      width: 100%;
     }
   }
   &__btns {
@@ -102,10 +107,8 @@ export default {
 @media screen and (max-width: 767px) {
   .post {
   width: calc(100% - 50px);
-  display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: flex-start;
   flex-direction: column;
   &__wrapper {
     margin-bottom: 20px;
@@ -124,11 +127,16 @@ export default {
     line-height: 156.69%;
     &-title {
       padding-bottom: 10px;
+      word-wrap: break-word;
+    }
+    &-descr {
+      word-wrap: break-word;
+      width: 100%;
     }
   }
   &__btns {
     margin-top: 10px;
-    width: 10%;
+    width: 50px;
     display: flex;
     justify-content: space-between;
   }
@@ -149,6 +157,32 @@ export default {
       width: 100%;
     }
   }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .post {
+  width: calc(100% - 30px);
+  &__text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.69%;
+    &-title {
+      padding-bottom: 10px;
+      word-wrap: break-word;
+      width: 100%;
+    }
+    &-descr {
+      word-wrap: break-word;
+      width: 100%;
+    }
+    }
 }
 }
 </style>

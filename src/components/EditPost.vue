@@ -31,35 +31,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media screen and (max-width: 1921px) {
   .edit {
     display: flex;
     flex-direction: column;
     &__btn {
-      width: 20%;
       margin-bottom: 10px;
       margin-left: auto;
       margin-right: auto;
+      width: 175px;
     }
     &__input {
       margin-bottom: 15px;
     }
   }
-}
-
-@media screen and (max-width: 767px) {
-.todo {
-  .edit {
-    display: flex;
-    flex-direction: column;
-    &__btn {
-      width: 50px;
-      margin-bottom: 10px;
-    }
-    &__input {
-      margin-bottom: 15px;
-    }
-  }
-}
-}
 </style>

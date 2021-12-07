@@ -131,7 +131,21 @@ export default {
 @media screen and (max-width: 767px) {
 .todo {
   width: 400px;
+  padding: 10px;
+  &__title {
+    padding-bottom: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 156.69%;
+  }
 }
+}
+
+@media screen and (max-width: 480px) {
+  .todo {
+    width: 260px;
+  }
 }
 
 </style>

@@ -1,9 +1,9 @@
 export const todoModule = {
     state: () => ({
         posts: [
-            {id: 1, title: 'Hello', body: 'LKflefslmvlksdmglsdmlsdmgldr', isActive: false},
-            {id: 2, title: 'Hello', body: 'LKflefslmvlksdmglsdmlsdmgldr', isActive: false},
-            {id: 3, title: 'Hello', body: 'LKflefslmvlksdmglsdmlsdmgldr', isActive: false},
+            {id: 1, title: 'Do something', body: 'eFEesgrfs ferfs erf', isActive: false},
+            {id: 2, title: 'Do something else', body: 'fewsfgewg', isActive: false},
+            {id: 3, title: 'Sleep', body: 'ADwfaf fgewgas rgedrg', isActive: false},
         ],
         fakeLogin: {
             username: 'Admin',
